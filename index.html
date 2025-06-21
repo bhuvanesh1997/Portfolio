@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvanesh M | Senior PHP Developer</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--dark);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--secondary);
+        }
+        
+        section {
+            padding: 3rem 0;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .skill-tag {
+            background: var(--secondary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .project-img {
+            height: 200px;
+            background: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-content h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        .project-tech {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .project-tech strong {
+            color: var(--dark);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .achievement {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                flex-wrap: wrap;
+            }
+            
+            nav a {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bhuvanesh M</h1>
+            <p>Senior PHP Developer | Laravel Expert | Payment Gateway Specialist</p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Full-Stack Web Developer</h2>
+            <p>5+ years experience building e-commerce platforms, CRM systems, and payment solutions for global markets</p>
+        </div>
+    </section>
+    
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="achievement">
+            <p>I'm a professional PHP developer with extensive experience in Laravel and CodeIgniter frameworks. Currently working at Gowelnext Solutions as a Software Developer, I specialize in:</p>
+            <ul>
+                <li>E-commerce development for GCC markets</li>
+                <li>Payment gateway integrations (PayU, Paytm, CC Avenue, TAP, Tabby)</li>
+                <li>CRM system development</li>
+                <li>REST API design and implementation</li>
+            </ul>
+            <p>Currently expanding my expertise in Flutter and React to build modern cross-platform applications.</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">CodeIgniter</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">jQuery</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">HTML5/CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">PayU Integration</span>
+            <span class="skill-tag">CC Avenue</span>
+            <span class="skill-tag">TAP Payment</span>
+            <span class="skill-tag">Tabby</span>
+        </div>
+    </section>
+    
+    <section id="projects" class="container">
+        <h2>Key Projects</h2>
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-content">
+                    <h3>JAZP.com E-commerce</h3>
+                    <p>GCC-focused e-commerce platform with CRM, REST API, and multiple payment gateways (TAP, Tabby).</p>
+                    <p class="project-tech"><strong>Technologies:</strong> PHP, CodeIgniter, MySQL, JavaScript, AJAX</p>
+                    <p><strong>My Role:</strong> Full-stack development, payment gateway integration, API development</p>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-content">
+                    <h3>Smotpro.in Passport System</h3>
+                    <p>Web-based passport application system with PayU payment gateway integration and admin CRM.</p>
+                    <p class="project-tech"><strong>Technologies:</strong> Laravel, MySQL, JavaScript, jQuery, AJAX</p>
+                    <p><strong>My Role:</strong> Front-end and back-end development, database design, payment integration</p>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-content">
+                    <h3>Buyda.saudi.sa</h3>
+                    <p>E-commerce platform for Saudi market with CRM and multiple payment options.</p>
+                    <p class="project-tech"><strong>Technologies:</strong> Laravel, MySQL, JavaScript, CSS</p>
+                    <p><strong>My Role:</strong> Back-end development, Laravel implementation, API creation</p>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-content">
+                    <h3>Royal Travancore Banking</h3>
+                    <p>Banking portal for SB account creation, loans, and RD collections with CRM integration.</p>
+                    <p class="project-tech"><strong>Technologies:</strong> Laravel, MySQL, JavaScript</p>
+                    <p><strong>My Role:</strong> Full-stack development, database management</p>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-content">
+                    <h3>Cozat.com</h3>
+                    <p>Hotel management system with room booking functionality and mobile app integration.</p>
+                    <p class="project-tech"><strong>Technologies:</strong> Laravel, MySQL, REST API</p>
+                    <p><strong>My Role:</strong> API development, back-end logic implementation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="experience" class="container" style="background: var(--light); padding: 2rem; border-radius: 8px;">
+        <h2>Professional Experience</h2>
+        
+        <div class="achievement">
+            <h3>Software Developer</h3>
+            <p><strong>Gowelnext Solutions Pvt. Ltd, Bengaluru</strong> | April 2024 - Present</p>
+            <ul>
+                <li>Developing enterprise PHP applications using Laravel framework</li>
+                <li>Implementing microservices architecture for scalable solutions</li>
+            </ul>
+        </div>
+        
+        <div class="achievement">
+            <h3>Software Developer</h3>
+            <p><strong>Aspire Jazp.com, Kannur</strong> | October 2021 - March 2024</p>
+            <ul>
+                <li>Led development of GCC e-commerce platform with 5+ integrated payment gateways</li>
+                <li>Implemented CRM system for order and customer management</li>
+            </ul>
+        </div>
+        
+        <div class="achievement">
+            <h3>PHP Developer</h3>
+            <p><strong>SRV InfoTech, Kannur</strong> | March 2019 - June 2020</p>
+            <ul>
+                <li>Developed web applications using PHP and MySQL</li>
+                <li>Implemented front-end interfaces with JavaScript and jQuery</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <div class="achievement">
+            <p><strong>Email:</strong> <a href="mailto:bhuvaneshmurukesh97@gmail.com">bhuvaneshmurukesh97@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 7736937707, +91 9847356030</p>
+            <p><strong>Location:</strong> Kannur, Kerala, India</p>
+            <p><strong>Availability:</strong> Open to full-time opportunities and freelance projects</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bhuvanesh M. All rights reserved.</p>
+            <p>Portfolio of a Senior PHP Developer specializing in Laravel and payment integrations</p>
+        </div>
+    </footer>
+</body>
+</html>
